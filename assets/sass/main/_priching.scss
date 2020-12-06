@@ -1,0 +1,56 @@
+.priching_worp {
+    margin-bottom: 135px;
+    .priching {
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+        border-radius: 20px;
+        padding: 30px 40px;
+        text-align: center;
+        background-color: #fff;
+        margin-top: 25px;
+        .pric_hed {
+            color: #454360;
+            font-family: "Rubik", sans-serif;
+            font-weight: 700;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            em {
+                font-style: normal;
+                vertical-align: super;
+                font-size: 14px;
+                margin-right: 5px;
+            }
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                margin-left: 5px;
+            }
+        }
+        .recomment {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 7px 12px;
+            line-height: 1;
+            background-color: red;
+            color: #fff;
+            text-align: left;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+            position: absolute;
+            top: 47px;
+            left: 0px;
+            transform: rotate(-90deg);
+            background: #6C6CE5;
+        }
+    }
+    .castom_col {
+        padding: 0;
+        z-index: 1;
+    }
+    .priching_meddil {
+        transform: scale(1.2);
+    }
+}

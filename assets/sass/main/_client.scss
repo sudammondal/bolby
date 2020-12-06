@@ -1,0 +1,16 @@
+.client_worp {
+    .client_item {
+        min-height: 50px;
+        position: relative;
+        text-align: center;
+        margin-top: 60px;
+        .img_item {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+}

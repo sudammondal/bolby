@@ -1,0 +1,78 @@
+.cliente_worp {
+    margin-bottom: 10px;
+    .slider_main {
+        text-align: center;
+        .slider_item {
+            outline: none;
+            .img_sliders {
+                margin-bottom: 15px;
+                img {
+                    margin: 0 auto;
+                }
+                .img_round {
+                    border-radius: 50%;
+                    width: 90px;
+                    height: 90px;
+                    height: auto;
+                }
+            }
+            .slid_hed {
+                color: #454360;
+                font-weight: 700;
+                font-size: 18px;
+                margin: 5px 0;
+            }
+            .prodact_title {
+                color: #8B88B1;
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            .slider_prag {
+                position: relative;
+                width: 660px;
+                margin: 0 auto;
+                padding: 30px;
+                background: #fff;
+                border-radius: 20px;
+                box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+                &::before {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-right: 15px solid #FFF;
+                    position: absolute;
+                    top: -18px;
+                    left: 50%;
+                    transform: rotate(90deg);
+                }
+                .sld_pra {
+                    margin: 0;
+                    color: #5E5C7F;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+            }
+        }
+        .slick-dots {
+            bottom: -50px;
+            li {
+                background-color: #d4d4ff;
+                width: 10px;
+                height: 6px;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.5s;
+                button {
+                    display: none;
+                }
+                &.slick-active {
+                    width: 20px;
+                    background-color: #ff4c60;
+                }
+            }
+        }
+    }
+}

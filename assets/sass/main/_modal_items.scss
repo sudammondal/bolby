@@ -1,0 +1,45 @@
+.mordal_worp {
+    .modal {
+        background: #151212a6;
+        .close {
+            font-size: 40px;
+            font-weight: 100;
+            line-height: 0;
+            color: #fff;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            opacity: 1;
+            outline: none;
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+        .modal-dialog {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            text-align: left;
+            max-width: 650px;
+            margin: 40px auto;
+            position: relative;
+            .modal-content {
+                border: 0;
+            }
+            .modal_img {
+                img {
+                    border-radius: 10px;
+                }
+            }
+            .modal_hed {
+                color: #454360;
+                font-family: "Rubik", sans-serif;
+                font-weight: 700;
+                margin: 20px 0;
+            }
+            .modal_para2 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}

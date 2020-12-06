@@ -1,0 +1,58 @@
+.contract_from {
+    margin-bottom: 100px;
+    .contrac_info {
+        background-image: url(../../../assets/imgs/map.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        .submet_hed {
+            color: #454360;
+            font-family: "Rubik", sans-serif;
+            font-weight: 700;
+            font-size: 23px;
+        }
+        .submet_pra {
+            a {
+                text-decoration: none;
+                color: #FF4C60;
+                transition: all 0.5s;
+                &:hover {
+                    color: #353353;
+                }
+            }
+        }
+    }
+    .submet_mail {
+        .main_form {
+            .inputItem,
+            &.from_group {
+                margin-bottom: 30px;
+                .form-control {
+                    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+                    display: block;
+                    border-radius: 30px;
+                    width: 100%;
+                    height: 60px;
+                    padding: 10px 30px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    color: #454360;
+                    background-color: #FFF;
+                    background-image: none;
+                    border: 0;
+                }
+                .textAria {
+                    width: 100%;
+                    min-height: 145px;
+                    height: 100%;
+                }
+                 ::placeholder {
+                    // color: rgb(162, 157, 157);
+                    color: #afadca;
+                }
+            }
+        }
+    }
+}

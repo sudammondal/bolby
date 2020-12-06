@@ -1,0 +1,56 @@
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+    .manu_sidebar {
+        max-width: 0%;
+        border: 0;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+@media (max-width: 420px) {
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+    .manu_sidebar {
+        max-width: 0%;
+        border: 0;
+    }
+    .about_worp .about .about_poto {
+        text-align: center;
+    }
+    .about_worp .about .about_poto {
+        margin-left: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .main {
+        max-width: 100%;
+        width: 100%;
+    }
+    .manu_sidebar {
+        max-width: 0%;
+        border: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1080px;
+        width: 100%;
+    }
+}

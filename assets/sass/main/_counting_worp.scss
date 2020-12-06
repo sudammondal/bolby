@@ -1,0 +1,23 @@
+.counting_worp {
+    margin-bottom: 95px;
+    .counting_item {
+        display: flex;
+        .count_icon {}
+        .counting_main {
+            margin-left: 30px;
+            .counting {
+                color: #454360;
+                font-family: "Rubik", sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            .count_pra {
+                color: #5E5C7F;
+                background-color: #F9F9FF;
+                font-family: "Rubik", sans-serif;
+                font-size: 16px;
+                line-height: 1.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #5E5C7F;
+    background-color: #F9F9FF;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #5E5C7F;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.button {
+    .btn {
+        border-radius: 30px;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 12px 32px;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        background: #FF4C60;
+        text-decoration: none;
+    }
+    .btn-default {
+        color: #FFF;
+        background: #FF4C60;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        &:hover {
+            color: #FFF;
+            -webkit-animation-name: button-push;
+            animation-name: button-push;
+            -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+        }
+    }
+    @keyframes button-push {
+        50% {
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}
+
+.about_itm {
+    position: relative;
+    margin-left: 5px;
+    .about_hed {
+        font-size: 36px;
+        color: #454360;
+        font-family: "Rubik", sans-serif;
+        font-weight: 700;
+        margin-left: 14px;
+        margin-bottom: 58px;
+    }
+    .dot_ing {
+        position: absolute;
+        top: -15px;
+        left: -5px;
+    }
+}

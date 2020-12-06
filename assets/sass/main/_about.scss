@@ -1,0 +1,101 @@
+.about_worp {
+    padding: 112px 0 65px;
+    .damo_item {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+        background-color: #fff;
+    }
+    .about {
+        .about_poto {
+            margin-left: 15px;
+            img {
+                width: 150px;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+        .about_cv {
+            max-width: 849px;
+            width: 100%;
+            min-height: 230px;
+            height: 100%;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+            .about_pra {
+                color: #5E5C7F;
+                font-family: "Rubik", sans-serif;
+                font-size: 16px;
+                line-height: 1.7;
+                max-width: 600px;
+                width: 100%;
+            }
+            &::before {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-right: 15px solid #FFF;
+                position: absolute;
+                left: 0;
+                top: 20%;
+            }
+            .progress_bar {
+                margin-bottom: 20px;
+                .progreg_mains {
+                    display: flex;
+                    .prog_pra {
+                        font-size: 16px;
+                        color: #454360;
+                        margin-bottom: 10px;
+                    }
+                    .parse {
+                        font-size: 14px;
+                        margin-left: auto;
+                        color: #5E5C7F;
+                    }
+                }
+                .progress {
+                    height: 7px;
+                    margin-bottom: 0;
+                    overflow: hidden;
+                    background-color: #F1F1F1;
+                    border-radius: 15px;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    .progressbar {
+                        border-radius: 15px;
+                        float: left;
+                        width: 0;
+                        height: 100%;
+                        font-size: 12px;
+                        line-height: 7px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                    .pro_color {
+                        background-color: rgb(255, 209, 92);
+                        width: 85%;
+                    }
+                    .pro_color2 {
+                        background-color: rgb(255, 76, 96);
+                        width: 95%;
+                    }
+                    .pro_color3 {
+                        background-color: rgb(108, 108, 229);
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.latest_worp {
+    padding: 110px 0;
+    .thumbnail {
+        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+        background-color: #fff;
+        border-radius: 20px;
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        .revew_item {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            color: #fff;
+            background-color: #FF4C60;
+            padding: 2px 7px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 14px;
+            font-family: "Rubik", sans-serif;
+            z-index: 1;
+        }
+        a {
+            text-decoration: none;
+            .Nature {
+                position: relative;
+                overflow: hidden;
+                .nimg {
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .caption {
+                padding: 20px;
+                .latest_hedr {
+                    color: #353353;
+                    font-family: "Rubik", sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    transition: all 0.3s ease-in-out;
+                    margin: 0;
+                    &:hover {
+                        color: #FF4C60;
+                    }
+                }
+                .updet_time {
+                    font-size: 14px;
+                    color: #8B88B1;
+                    padding-left: 0;
+                    list-style: none;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    display: flex;
+                    .timer {
+                        position: relative;
+                        &:after {
+                            content: "";
+                            background: #8B88B1;
+                            border-radius: 50%;
+                            display: inline-block;
+                            height: 3px;
+                            margin-left: 0.6rem;
+                            vertical-align: middle;
+                            width: 3px;
+                        }
+                    }
+                    .catagory {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
