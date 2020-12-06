@@ -96,21 +96,5 @@ $(document).ready(function() {
     isoTopActive();
     // ========== filtering========== //
 
-    /*---------LIGHT-BOX js-----------*/
-    function lightBoxImages() {
-        var selectorG = '.icon_link';
-        if ($(selectorG).length) {
-            var instanceG = $(selectorG).imageLightbox({
-                quitOnDocClick: false,
-                button: true,
-                activity: true,
-                overlay: true,
-                arrows: true,
-                preloadNext: true,
-            });
-        }
-    }
-    lightBoxImages();
-    /*---------LIGHT-BOX js-----------*/
 
 });
