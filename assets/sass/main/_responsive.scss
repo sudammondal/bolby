@@ -1,56 +1,99 @@
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-    .main {
-        max-width: 100%;
-        width: 100%;
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {}
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 1024px) {
+        .banner_worp.main {
+            max-width: 100%;
+            width: 100%;
+        }
+        .manu_sidebar {
+            max-width: 0%;
+            width: 0;
+            border: 0;
+        }
+        .cliente_worp .slider_main .slider_item .slider_prag::before {
+            left: 49%;
+            top: -16px;
+        }
     }
-    .manu_sidebar {
-        max-width: 0%;
-        border: 0;
+    
+    @media (min-width: 992px) {}
+    
+    // Medium devices (tablets, 768px and up)
+    @media (max-width: 768px) {
+        .banner_worp.main {
+            max-width: 100%;
+            width: 100%;
+        }
+        .manu_sidebar {
+            max-width: 0%;
+            width: 0;
+            border: 0;
+        }
+        .cliente_worp .slider_main .slider_item .slider_prag::before {
+            left: 49%;
+            top: -16px;
+        }
     }
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-@media (max-width: 420px) {
-    .main {
-        max-width: 100%;
-        width: 100%;
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    
+    @media (max-width: 420px) {
+        .banner_worp.main {
+            .banner {
+                .svg5 {
+                    left: 25px;
+                }
+                .svg2 {
+                    right: 60px;
+                }
+                .svg4 {
+                    left: 77px;
+                }
+            }
+        }
+        .about_worp .about_poto {
+            margin-bottom: 30px;
+            text-align: center;
+            margin-left: 0;
+        }
+        .about_worp .about_cv::before {
+            left: 48%;
+            top: -16px;
+            transform: rotate(90deg);
+        }
+        .srvice_worp .sarvice_item {
+            margin-bottom: 30px;
+        }
+        .exprience_worp .acadmi_hed {
+            margin-bottom: 30px;
+        }
+        .recent_worp .filter_main .filter_manu {
+            display: block;
+        }
+        .recent_worp .filter_main .filter_manu .filter_list {
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+        .priching_worp {
+            .castom_col {
+                padding: 15px;
+            }
+            .priching_meddil {
+                transform: scale(1);
+            }
+        }
+        .cliente_worp .slider_main .slider_item .slider_prag {
+            position: relative;
+            width: 360px;
+        }
+        .latest_worp .thumbnail {
+            margin-bottom: 30px;
+        }
     }
-    .manu_sidebar {
-        max-width: 0%;
-        border: 0;
-    }
-    .about_worp .about .about_poto {
-        text-align: center;
-    }
-    .about_worp .about .about_poto {
-        margin-left: 15px;
-        text-align: center;
-    }
-}
-
-@media (max-width: 320px) {
-    .main {
-        max-width: 100%;
-        width: 100%;
-    }
-    .manu_sidebar {
-        max-width: 0%;
-        border: 0;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1080px;
-        width: 100%;
-    }
-}
+    
+    @media (max-width: 320px) {}
+    
+    @media (min-width: 1400px) {}

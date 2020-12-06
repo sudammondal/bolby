@@ -94,6 +94,9 @@ p {
   overflow-y: scroll;
   padding-top: 20px;
 }
+.manu_sidebar .head_manu .sidenav {
+  width: 290px;
+}
 .manu_sidebar .head_manu .sidenav a {
   text-decoration: none;
   font-size: 20px;
@@ -161,6 +164,7 @@ p {
   max-width: 78.5%;
   width: 100%;
   float: right;
+  background-color: red;
 }
 .banner_worp.main .banner {
   text-align: center;
@@ -310,25 +314,21 @@ p {
   box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
   background-color: #fff;
 }
-.about_worp .about .about_poto {
+.about_worp .about_poto {
   margin-left: 15px;
 }
-.about_worp .about .about_poto img {
+.about_worp .about_poto img {
   width: 150px;
   height: auto;
   border-radius: 50%;
 }
-.about_worp .about .about_cv {
-  max-width: 849px;
-  width: 100%;
-  min-height: 230px;
-  height: 100%;
+.about_worp .about_cv {
   padding: 30px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
-.about_worp .about .about_cv .about_pra {
+.about_worp .about_cv .about_pra {
   color: #5E5C7F;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -336,7 +336,7 @@ p {
   max-width: 600px;
   width: 100%;
 }
-.about_worp .about .about_cv::before {
+.about_worp .about_cv::before {
   content: "";
   width: 0;
   height: 0;
@@ -347,23 +347,23 @@ p {
   left: 0;
   top: 20%;
 }
-.about_worp .about .about_cv .progress_bar {
+.about_worp .about_cv .progress_bar {
   margin-bottom: 20px;
 }
-.about_worp .about .about_cv .progress_bar .progreg_mains {
+.about_worp .about_cv .progress_bar .progreg_mains {
   display: flex;
 }
-.about_worp .about .about_cv .progress_bar .progreg_mains .prog_pra {
+.about_worp .about_cv .progress_bar .progreg_mains .prog_pra {
   font-size: 16px;
   color: #454360;
   margin-bottom: 10px;
 }
-.about_worp .about .about_cv .progress_bar .progreg_mains .parse {
+.about_worp .about_cv .progress_bar .progreg_mains .parse {
   font-size: 14px;
   margin-left: auto;
   color: #5E5C7F;
 }
-.about_worp .about .about_cv .progress_bar .progress {
+.about_worp .about_cv .progress_bar .progress {
   height: 7px;
   margin-bottom: 0;
   overflow: hidden;
@@ -371,7 +371,7 @@ p {
   border-radius: 15px;
   box-shadow: none;
 }
-.about_worp .about .about_cv .progress_bar .progress .progressbar {
+.about_worp .about_cv .progress_bar .progress .progressbar {
   border-radius: 15px;
   float: left;
   width: 0;
@@ -381,15 +381,15 @@ p {
   color: #fff;
   text-align: center;
 }
-.about_worp .about .about_cv .progress_bar .progress .pro_color {
+.about_worp .about_cv .progress_bar .progress .pro_color {
   background-color: #ffd15c;
   width: 85%;
 }
-.about_worp .about .about_cv .progress_bar .progress .pro_color2 {
+.about_worp .about_cv .progress_bar .progress .pro_color2 {
   background-color: #ff4c60;
   width: 95%;
 }
-.about_worp .about .about_cv .progress_bar .progress .pro_color3 {
+.about_worp .about_cv .progress_bar .progress .pro_color3 {
   background-color: #6c6ce5;
   width: 70%;
 }
@@ -948,52 +948,94 @@ p {
 }
 
 /*==========================*/
-@media (max-width: 768px) {
-  .main {
+@media (min-width: 1024px) {
+  .banner_worp.main {
     max-width: 100%;
     width: 100%;
   }
 
   .manu_sidebar {
     max-width: 0%;
+    width: 0;
     border: 0;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
+  }
+}
+@media (max-width: 768px) {
+  .banner_worp.main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .manu_sidebar {
+    max-width: 0%;
+    width: 0;
+    border: 0;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
   }
 }
 @media (max-width: 420px) {
-  .main {
-    max-width: 100%;
-    width: 100%;
+  .banner_worp.main .banner .svg5 {
+    left: 25px;
+  }
+  .banner_worp.main .banner .svg2 {
+    right: 60px;
+  }
+  .banner_worp.main .banner .svg4 {
+    left: 77px;
   }
 
-  .manu_sidebar {
-    max-width: 0%;
-    border: 0;
-  }
-
-  .about_worp .about .about_poto {
+  .about_worp .about_poto {
+    margin-bottom: 30px;
     text-align: center;
+    margin-left: 0;
   }
 
-  .about_worp .about .about_poto {
-    margin-left: 15px;
+  .about_worp .about_cv::before {
+    left: 48%;
+    top: -16px;
+    transform: rotate(90deg);
+  }
+
+  .srvice_worp .sarvice_item {
+    margin-bottom: 30px;
+  }
+
+  .exprience_worp .acadmi_hed {
+    margin-bottom: 30px;
+  }
+
+  .recent_worp .filter_main .filter_manu {
+    display: block;
+  }
+
+  .recent_worp .filter_main .filter_manu .filter_list {
     text-align: center;
-  }
-}
-@media (max-width: 320px) {
-  .main {
-    max-width: 100%;
-    width: 100%;
+    margin: 0 0 10px 0;
   }
 
-  .manu_sidebar {
-    max-width: 0%;
-    border: 0;
+  .priching_worp .castom_col {
+    padding: 15px;
   }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1080px;
-    width: 100%;
+  .priching_worp .priching_meddil {
+    transform: scale(1);
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag {
+    position: relative;
+    width: 360px;
+  }
+
+  .latest_worp .thumbnail {
+    margin-bottom: 30px;
   }
 }
 /*==========mordal_worp==========*/
