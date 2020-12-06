@@ -31,7 +31,7 @@ $(document).ready(function() {
     //=============== latest news ==========//
     $('.slider_main').slick({
         arrows: false,
-        autoplay: 1,
+        autoplay: 0,
         dots: true,
         infinite: true,
         speed: 300,
