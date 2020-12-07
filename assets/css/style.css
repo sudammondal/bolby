@@ -82,6 +82,11 @@ p {
   left: -5px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1058px;
+  }
+}
 .manu_sidebar {
   max-width: 21.5%;
   width: 100%;
@@ -952,11 +957,6 @@ p {
 }
 
 /*==========================*/
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1058px;
-  }
-}
 @media (max-width: 1024px) {
   .banner_worp.main {
     max-width: 100%;
