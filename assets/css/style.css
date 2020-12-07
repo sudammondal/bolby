@@ -952,7 +952,7 @@ p {
 }
 
 /*==========================*/
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1058px;
   }
