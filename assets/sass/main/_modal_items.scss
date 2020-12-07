@@ -43,3 +43,21 @@
         }
     }
 }
+
+.modal_fast {
+    position: relative;
+    .close {
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 0;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        opacity: 1;
+        outline: none;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}
