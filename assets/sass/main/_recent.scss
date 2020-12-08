@@ -14,8 +14,9 @@
                 padding: 7px 20px;
                 border: 1px solid #ddd;
                 border-radius: 10px;
+                transition: all 0.3s ease-in-out;
                 .f_link {
-                    transition: all 0.3s ease-in-out;
+                    // transition: all 0.3s ease-in-out;
                     color: #5E5C7F;
                     text-decoration: none;
                 }

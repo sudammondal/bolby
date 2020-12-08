@@ -537,9 +537,9 @@ p {
   padding: 7px 20px;
   border: 1px solid #ddd;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .recent_worp .filter_main .filter_manu .filter_list .f_link {
-  transition: all 0.3s ease-in-out;
   color: #5E5C7F;
   text-decoration: none;
 }
