@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bolby</title>
-    <link rel="shotcut icon" type="imge/x-icon" href="./asset/imgs/logoBrand/iconA.png">
+
+    <link rel="shotcut icon" type="imge/x-icon" href="./assets/imgs/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel=" stylesheet " href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://droitthemes.com/html/mak/css/imagelightbox.css">
@@ -14,20 +15,29 @@
     <link rel="stylesheet" href="./assets/css/magnific-popup.css">
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-- start sidebear header-->
 
     <header class="manu_sidebar">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+
         <div class="head_manu">
             <div class="sidenav">
                 <div class="logo_brand">
                     <img src="./assets/imgs/logo.svg" alt="img">
                 </div>
-                <nav>
-                    <ul class="main_manu">
+                <nav id="myScrollspy">
+                    <ul class="nav nav-pills nav-stacked main_manu">
                         <li class="list_item active">
                             <span class="hom_icon"><i class="fa fa-home"></i></span>
                             <a class="nav_link" href="#home">Home</a>
@@ -65,10 +75,12 @@
                             <span class="hom_icon"><i class="fa fa-comments-o"></i></span>
                             <a class="nav_link" href="#contract_from">Contact</a>
                         </li>
+
                     </ul>
                 </nav>
 
             </div>
+
         </div>
         <footer class="footer">
             <p class="copyright"> © 2020 Bolby Template.</p>
@@ -250,7 +262,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                        <div class="sarvice_item">
+                        <div class="sarvice_item sarvice_item1">
                             <div class="service_img"><img src="./assets/imgs/service-1.svg" alt="img"></div>
                             <h4 class="serv_hed">UI/UX design</h4>
                             <p class="sarvic_pra">Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.</p>
@@ -718,63 +730,56 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal -->
-            <!--modal item-->
-            <div class="mordal_worp">
-                <div class="modal fade modal_fast_img" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </div>
+        <!-- Modal -->
+        <!--modal item-->
+        <div class="mordal_worp">
+            <div class="modal fade modal_fast_img" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal_img">
-                                <img class="img-fluid" src="./assets/imgs/" alt="img">
-                            </div>
-                            <h3 class="modal_hed">Guest App Walkthrough Screens</h3>
-                            <p class="modal_para">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.
-                            </p>
-                            <p class="modal_para modal_para2">
-                                Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.
-                            </p>
-                            <div class="button margin_top">
-                                <a href="# " class="btn-default btn ">View on Dribbble</a>
-                            </div>
+                <div class="modal-dialog modal-lg border_no">
+                    <div class="modal-content border_noe">
+                        <div class="modal_img1">
+                            <img class="img-fluid" src="./assets/imgs/1pppp.svg" alt="img">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal item-->
+        <!--modal item-->
+        <div class="mordal_worp">
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal_img">
+                            <img class="img-fluid" src="./assets/imgs/single-work.svg" alt="img">
+                        </div>
+                        <h3 class="modal_hed">Guest App Walkthrough Screens</h3>
+                        <p class="modal_para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.
+                        </p>
+                        <p class="modal_para modal_para2">
+                            Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.
+                        </p>
+                        <div class="button margin_top">
+                            <a href="# " class="btn-default btn ">View on Dribbble</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--modal item-->
-            <!--modal item-->
-            <div class="mordal_worp">
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal_img">
-                                <img class="img-fluid" src="./assets/imgs/single-work.svg" alt="img">
-                            </div>
-                            <h3 class="modal_hed">Guest App Walkthrough Screens</h3>
-                            <p class="modal_para">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.
-                            </p>
-                            <p class="modal_para modal_para2">
-                                Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.
-                            </p>
-                            <div class="button margin_top">
-                                <a href="# " class="btn-default btn ">View on Dribbble</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--modal item-->
+        </div>
+        <!--modal item-->
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="./assets/js/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./assets/js/bootstrap2.min.js"></script>
         <script src="./assets/js/jquery.magnific-popup.min.js"></script>
         <script src="./assets/js/jquery.counterup.min.js"></script>
         <script src="./assets/js/waypoints.min.js"></script>

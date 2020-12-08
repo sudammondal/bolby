@@ -4,7 +4,7 @@
         border-radius: 20px;
         text-align: center;
         padding: 30px;
-        box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
+        box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.9);
         transition: all 0.5s;
         .serv_hed {
             font-family: "Rubik", sans-serif;
@@ -16,31 +16,52 @@
         .sarvic_pra {
             color: #fff;
         }
+    }
+    .sarvice_item1 {
+        box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.9);
+        transition: all 0.5s;
         &:hover {
+            box-shadow: 0px 6px 20px 2px rgba(108, 108, 229, 0.9);
             transform: translateY(-10px);
         }
     }
     .sarvice_color2 {
         background-color: rgb(249, 215, 76);
+        box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.9);
+        &:hover {
+            box-shadow: 0px 6px 20px 2px rgba(249, 215, 76, 0.9);
+            transform: translateY(-10px);
+        }
+        .serv_hed {
+            color: #454360;
+            .sarvic_pra {
+                color: #000;
+            }
+        }
         .serv_hed {
             color: #454360;
         }
         .sarvic_pra {
             color: #5E5C7F;
         }
-    }
-    .sarvice_color3 {
-        background-color: rgb(249, 123, 139);
-    }
-    .click_pra {
-        margin-top: 45px;
-        text-align: center;
-        .clicks {
-            text-decoration: none;
-            color: #FF4C60;
-            transition: all 0.3s ease-in-out;
+        .sarvice_color3 {
+            background-color: rgb(249, 123, 139);
+            box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.9);
             &:hover {
-                color: #353353;
+                box-shadow: 0px 6px 20px 2px rgba(249, 123, 139, 0.9);
+                transform: translateY(-10px);
+            }
+        }
+        .click_pra {
+            margin-top: 45px;
+            text-align: center;
+            .clicks {
+                text-decoration: none;
+                color: #FF4C60;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: #353353;
+                }
             }
         }
     }

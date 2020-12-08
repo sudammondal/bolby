@@ -11,6 +11,14 @@
             top: 50%;
             transform: translateY(-50%);
             width: 100%;
+            img {
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    transition: all 0.3s ease-in-out;
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 }
