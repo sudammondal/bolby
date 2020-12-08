@@ -52,16 +52,16 @@
                 transform: translateY(-10px);
             }
         }
-        .click_pra {
-            margin-top: 45px;
-            text-align: center;
-            .clicks {
-                text-decoration: none;
-                color: #FF4C60;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    color: #353353;
-                }
+    }
+    .click_pra {
+        margin-top: 45px;
+        text-align: center;
+        .clicks {
+            text-decoration: none;
+            color: #FF4C60;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #353353;
             }
         }
     }
