@@ -547,7 +547,7 @@ p {
   margin-left: 0;
 }
 .recent_worp .filter_main .filter_manu .filter_list.active, .recent_worp .filter_main .filter_manu .filter_list:hover {
-  background-color: #ddd;
+  background-color: red;
 }
 .recent_worp .filter_main .filter_manu .filter_list.active .f_link, .recent_worp .filter_main .filter_manu .filter_list:hover .f_link {
   color: #FF4C60;
