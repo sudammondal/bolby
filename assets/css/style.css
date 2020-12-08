@@ -1119,6 +1119,9 @@ p {
 .mordal_worp .modal {
   background: #151212a6;
 }
+.mordal_worp .modal.show .modal-dialog {
+  transform: translate(0) scale(1);
+}
 .mordal_worp .modal .close {
   font-size: 40px;
   font-weight: 100;
@@ -1141,6 +1144,7 @@ p {
   max-width: 650px;
   margin: 40px auto;
   position: relative;
+  transform: translate(0) scale(0);
 }
 .mordal_worp .modal .modal-dialog .modal-content {
   border: 0;
