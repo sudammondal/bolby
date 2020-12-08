@@ -647,18 +647,6 @@ p {
   transform: translateY(0);
 }
 
-.recent_worp .filter_main .filter_manu .filter_list {
-  cursor: pointer;
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 20px;
-  padding: 7px 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #ddd;
-}
-
 .priching_worp {
   margin-bottom: 135px;
 }
