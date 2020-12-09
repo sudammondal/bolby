@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
 
     // up icon js //
-    $('.up_icon a[href^="#"').on('click', function(event) {
+    $('.main_manu,li a[href="#home"]').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();
