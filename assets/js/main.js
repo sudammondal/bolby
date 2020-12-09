@@ -8,13 +8,12 @@ $(document).ready(function() {
     });
 
     // up icon js //
-    $('a[href^="#"').on('click', function(event) {
+    $('.up_icon a[href^="#"],.main_manu li a[href^="#"]').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top -
-                    100
+                scrollTop: target.offset().top - 100
             }, 2000);
         }
     });
