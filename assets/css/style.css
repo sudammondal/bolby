@@ -88,8 +88,6 @@ p {
   }
 }
 .manu_sidebar {
-  max-width: 21.5%;
-  width: 100%;
   height: 100vh;
   min-height: 100vh;
   background: #353353;
@@ -99,8 +97,21 @@ p {
   top: 0;
   left: 0;
   overflow-y: scroll;
-  padding-top: 20px;
   overflow-x: hidden;
+  animation: animateleft 0.4s;
+  width: 290px;
+}
+.manu_sidebar .buttonw3 {
+  z-index: 3;
+  position: relative;
+  z-index: 3;
+  position: relative;
+  margin: 0 10px;
+  font-size: 30px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #fff;
 }
 .manu_sidebar .head_manu .sidenav a {
   text-decoration: none;
@@ -119,6 +130,7 @@ p {
 .manu_sidebar .head_manu .sidenav .main_manu .list_item {
   position: relative;
   padding: 8px 40px;
+  width: 100%;
 }
 .manu_sidebar .head_manu .sidenav .main_manu .list_item .nav_link {
   color: #FFF;
@@ -128,9 +140,6 @@ p {
   width: 100%;
   text-decoration: none;
   margin-left: 35px;
-}
-.manu_sidebar .head_manu .sidenav .main_manu .list_item:hover, .manu_sidebar .head_manu .sidenav .main_manu .list_item.active {
-  width: 100%;
 }
 .manu_sidebar .head_manu .sidenav .main_manu .list_item:hover .nav_link, .manu_sidebar .head_manu .sidenav .main_manu .list_item.active .nav_link {
   color: #FFD15C;
@@ -164,12 +173,21 @@ p {
     font-size: 18px;
   }
 }
+@keyframes animateleft {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
 .banner_worp.main {
   font-size: 28px;
   padding: 0px;
-  max-width: 78.5%;
-  width: 100%;
-  float: right;
+  animation: animateleft 0.4s;
+  margin-left: 290px;
 }
 .banner_worp.main .banner {
   text-align: center;
@@ -988,164 +1006,6 @@ p {
 }
 
 /*==========================*/
-@media (max-width: 1024px) {
-  .banner_worp.main {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .manu_sidebar {
-    max-width: 0%;
-    width: 0;
-    border: 0;
-  }
-  .manu_sidebar .footer {
-    position: initial;
-  }
-
-  .cliente_worp .slider_main .slider_item .slider_prag::before {
-    left: 49%;
-    top: -16px;
-  }
-}
-@media (max-width: 768px) {
-  .banner_worp.main {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .manu_sidebar {
-    max-width: 0%;
-    width: 0;
-    border: 0;
-  }
-
-  .cliente_worp .slider_main .slider_item .slider_prag::before {
-    left: 49%;
-    top: -16px;
-  }
-
-  .upicon .up_iconFixd {
-    bottom: 15px;
-    right: 15px;
-  }
-}
-@media (max-width: 736px) {
-  .srvice_worp .sarvice_item {
-    margin-bottom: 30px;
-  }
-
-  .exprience_worp .acadmi_hed {
-    margin-bottom: 30px;
-  }
-
-  .priching_worp {
-    margin-bottom: 30px;
-  }
-  .priching_worp .castom_col {
-    padding: 15px;
-  }
-  .priching_worp .priching_meddil {
-    transform: scale(1);
-  }
-
-  .cliente_worp {
-    margin-top: 100px;
-  }
-
-  .cliente_worp .slider_main .slider_item .slider_prag::before {
-    left: 49%;
-    top: -16px;
-  }
-
-  .cliente_worp .slider_main .slider_item .slider_prag {
-    position: relative;
-    width: 460px;
-  }
-
-  .latest_worp .thumbnail {
-    margin-bottom: 30px;
-  }
-
-  .about_worp .about_poto {
-    margin-bottom: 30px;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .about_worp .about_cv::before {
-    left: 48%;
-    top: -16px;
-    transform: rotate(90deg);
-  }
-}
-@media (max-width: 420px) {
-  .banner_worp.main .banner .svg5 {
-    left: 25px;
-  }
-  .banner_worp.main .banner .svg2 {
-    right: 60px;
-  }
-  .banner_worp.main .banner .svg4 {
-    left: 77px;
-  }
-
-  .about_worp .about_poto {
-    margin-bottom: 30px;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .about_worp .about_cv::before {
-    left: 48%;
-    top: -16px;
-    transform: rotate(90deg);
-  }
-
-  .srvice_worp .sarvice_item {
-    margin-bottom: 30px;
-  }
-
-  .exprience_worp .acadmi_hed {
-    margin-bottom: 30px;
-  }
-
-  .recent_worp .filter_main .filter_manu {
-    display: block;
-  }
-
-  .recent_worp .filter_main .filter_manu .filter_list {
-    text-align: center;
-    margin: 0 0 10px 0;
-  }
-
-  .priching_worp .castom_col {
-    padding: 15px;
-  }
-  .priching_worp .priching_meddil {
-    transform: scale(1);
-  }
-
-  .cliente_worp .slider_main .slider_item .slider_prag {
-    position: relative;
-    width: 360px;
-  }
-
-  .latest_worp .thumbnail {
-    margin-bottom: 30px;
-  }
-
-  .upicon .up_iconFixd {
-    bottom: 10px;
-    right: 10px;
-  }
-}
-@media (max-width: 320px) {
-  .upicon .up_iconFixd {
-    bottom: 5px;
-    right: 5px;
-  }
-}
 /*==========mordal_worp==========*/
 .mordal_worp .modal {
   background: #151212a6;

@@ -1,9 +1,8 @@
 .banner_worp.main {
     font-size: 28px;
     padding: 0px;
-    max-width: 78.5%;
-    width: 100%;
-    float: right;
+    animation: animateleft 0.4s;
+    margin-left: 290px;
     .banner {
         text-align: center;
         background-color: #353353;

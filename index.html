@@ -23,7 +23,10 @@
 <body id="home" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-- start sidebear header-->
 
-    <header class="manu_sidebar">
+
+
+    <header class="manu_sidebar" id="mySidebar">
+        <button class="buttonw3" onclick="w3_close()"><i class="fa fa-times" aria-hidden="true"></i></button>
         <div class="head_manu">
             <div class="sidenav">
                 <div class="logo_brand">
@@ -52,10 +55,7 @@
                             <span class="hom_icon"><i class="fa fa-database"></i></span>
                             <a class="nav_link" href="#recent_worp">Works</a>
                         </li>
-                        <li class="list_item">
-                            <span class="hom_icon"><i class="fa fa-pencil-square-o"></i></span>
-                            <a class="nav_link" href="#latest_worp">Blog</a>
-                        </li>
+
                         <li class="list_item">
                             <span class="hom_icon"><i class="fa fa-usd"></i></span>
                             <a class="nav_link" href="#PricingPlans">Pricing Plans</a>
@@ -63,6 +63,10 @@
                         <li class="list_item">
                             <span class="hom_icon"><i class="fa fa-handshake-o"></i></span>
                             <a class="nav_link" href="#ClientsReviews">Clients & Reviews</a>
+                        </li>
+                        <li class="list_item">
+                            <span class="hom_icon"><i class="fa fa-pencil-square-o"></i></span>
+                            <a class="nav_link" href="#latest_worp">Blog</a>
                         </li>
                         <li class="list_item">
                             <span class="hom_icon"><i class="fa fa-comments-o"></i></span>
@@ -82,7 +86,11 @@
     </header>
     <!-- end sidebear header-->
 
-    <div class="banner_worp main">
+    <div class="banner_worp main" id="main">
+        <div class="w3-teal">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()" style="display: inline-block;">☰</button>
+
+        </div>
         <!---start banner home-->
         <section class="banner" id="home">
             <div class="container">
