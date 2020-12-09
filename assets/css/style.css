@@ -188,7 +188,6 @@ p {
 .banner_worp.main {
   font-size: 28px;
   padding: 0px;
-  animation: animateleft 0.4s;
   margin-left: 290px;
 }
 .banner_worp.main .banner {
