@@ -4,6 +4,8 @@
     animation: animateleft 0.4s;
     margin-left: 290px;
     .banner {
+        height: 100vh;
+        min-height: 100vh;
         text-align: center;
         background-color: #353353;
         padding: 160px 0 60px;

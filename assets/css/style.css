@@ -190,6 +190,8 @@ p {
   margin-left: 290px;
 }
 .banner_worp.main .banner {
+  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background-color: #353353;
   padding: 160px 0 60px;
@@ -1006,6 +1008,164 @@ p {
 }
 
 /*==========================*/
+@media (max-width: 1024px) {
+  .banner_worp.main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .manu_sidebar {
+    max-width: 0%;
+    width: 0;
+    border: 0;
+  }
+  .manu_sidebar .footer {
+    position: initial;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
+  }
+}
+@media (max-width: 768px) {
+  .banner_worp.main {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .manu_sidebar {
+    max-width: 0%;
+    width: 0;
+    border: 0;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
+  }
+
+  .upicon .up_iconFixd {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media (max-width: 736px) {
+  .srvice_worp .sarvice_item {
+    margin-bottom: 30px;
+  }
+
+  .exprience_worp .acadmi_hed {
+    margin-bottom: 30px;
+  }
+
+  .priching_worp {
+    margin-bottom: 30px;
+  }
+  .priching_worp .castom_col {
+    padding: 15px;
+  }
+  .priching_worp .priching_meddil {
+    transform: scale(1);
+  }
+
+  .cliente_worp {
+    margin-top: 100px;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag {
+    position: relative;
+    width: 460px;
+  }
+
+  .latest_worp .thumbnail {
+    margin-bottom: 30px;
+  }
+
+  .about_worp .about_poto {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about_worp .about_cv::before {
+    left: 48%;
+    top: -16px;
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 420px) {
+  .banner_worp.main .banner .svg5 {
+    left: 25px;
+  }
+  .banner_worp.main .banner .svg2 {
+    right: 60px;
+  }
+  .banner_worp.main .banner .svg4 {
+    left: 77px;
+  }
+
+  .about_worp .about_poto {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about_worp .about_cv::before {
+    left: 48%;
+    top: -16px;
+    transform: rotate(90deg);
+  }
+
+  .srvice_worp .sarvice_item {
+    margin-bottom: 30px;
+  }
+
+  .exprience_worp .acadmi_hed {
+    margin-bottom: 30px;
+  }
+
+  .recent_worp .filter_main .filter_manu {
+    display: block;
+  }
+
+  .recent_worp .filter_main .filter_manu .filter_list {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  .priching_worp .castom_col {
+    padding: 15px;
+  }
+  .priching_worp .priching_meddil {
+    transform: scale(1);
+  }
+
+  .cliente_worp .slider_main .slider_item .slider_prag {
+    position: relative;
+    width: 360px;
+  }
+
+  .latest_worp .thumbnail {
+    margin-bottom: 30px;
+  }
+
+  .upicon .up_iconFixd {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .upicon .up_iconFixd {
+    bottom: 5px;
+    right: 5px;
+  }
+}
 /*==========mordal_worp==========*/
 .mordal_worp .modal {
   background: #151212a6;
