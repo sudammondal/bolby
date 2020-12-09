@@ -3,93 +3,97 @@
     padding: 0px;
     margin-left: 290px;
     .banner {
-        height: 100vh;
-        min-height: 100vh;
-        text-align: center;
         background-color: #353353;
-        padding: 160px 0 60px;
-        position: relative;
         .banner_main {
-            .my_img {
-                margin-bottom: 25px;
-                img {
-                    width: 108px;
-                    height: auto;
-                    border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            .bannerInner {
+                text-align: center;
+                .my_img {
+                    margin-bottom: 25px;
+                    img {
+                        width: 108px;
+                        height: auto;
+                        border-radius: 50%;
+                    }
                 }
-            }
-            .banne_hed {
-                font-family: 'Rubik', sans-serif;
-                font-size: 36px;
-                font-weight: 700;
-                color: #fff;
-                margin-bottom: 8px;
-            }
-            .banner_pra {
-                color: #fff;
-                font-size: 16px;
-                line-height: 1.7;
-                font-weight: 400;
-                margin-bottom: 16px;
-                font-family: "Rubik", sans-serif;
-            }
-            .manuitems {
-                margin-bottom: 20px;
-                padding-left: 0;
-                list-style: none;
-                .list_item {
-                    display: inline-block;
-                    padding: 0 10px;
-                    margin: 0;
-                    .bn_icom {
-                        display: block;
-                        color: #fff;
-                        font-size: 22px;
-                        font-weight: 400;
-                        &:hover {
-                            color: #FFD15C;
+                .banne_hed {
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 36px;
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 8px;
+                }
+                .banner_pra {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 1.7;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                    font-family: "Rubik", sans-serif;
+                }
+                .manuitems {
+                    margin-bottom: 20px;
+                    padding-left: 0;
+                    list-style: none;
+                    .list_item {
+                        display: inline-block;
+                        padding: 0 10px;
+                        margin: 0;
+                        .bn_icom {
+                            display: block;
+                            color: #fff;
+                            font-size: 22px;
+                            font-weight: 400;
+                            &:hover {
+                                color: #FFD15C;
+                            }
                         }
                     }
                 }
             }
-            .scroll_down {
-                margin-top: 62px;
-                .scroll {
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 14px;
+        }
+        .scroll_down {
+            position: absolute;
+            bottom: 30px;
+            .scroll {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                margin: auto;
+                text-align: center;
+                font-weight: 400;
+                line-height: 1.5;
+                font-family: "Rubik", sans-serif;
+                text-transform: capitalize;
+            }
+            .mouse {
+                border: solid 2px #FFF;
+                border-radius: 16px;
+                display: block;
+                margin: auto;
+                margin-top: 10px;
+                height: 26px;
+                position: relative;
+                width: 20px;
+                .wheel {
+                    background: #FFF;
+                    border-radius: 100%;
                     display: block;
-                    margin: auto;
-                    text-align: center;
-                    font-weight: 400;
-                    line-height: 1.5;
-                    font-family: "Rubik", sans-serif;
-                    text-transform: capitalize;
-                }
-                .mouse {
-                    border: solid 2px #FFF;
-                    border-radius: 16px;
-                    display: block;
-                    margin: auto;
-                    margin-top: 10px;
-                    height: 26px;
-                    position: relative;
-                    width: 20px;
-                    .wheel {
-                        background: #FFF;
-                        border-radius: 100%;
-                        display: block;
-                        position: absolute;
-                        top: 8px;
-                        left: 50%;
-                        -webkit-transform: translateX(-50%);
-                        -ms-transform: translateX(-50%);
-                        transform: translateX(-50%);
-                        height: 4px;
-                        width: 4px;
-                        -webkit-animation: ani-mouse 2s linear infinite;
-                        animation: ani-mouse 2s linear infinite;
-                    }
+                    position: absolute;
+                    top: 8px;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    height: 4px;
+                    width: 4px;
+                    -webkit-animation: ani-mouse 2s linear infinite;
+                    animation: ani-mouse 2s linear infinite;
                 }
             }
         }

@@ -1,34 +1,27 @@
 .upicon {
     .up_iconFixd {
-        transition: all 0.5s;
         position: fixed;
         bottom: 30px;
         right: 30px;
         z-index: 1;
+    }
+    a {
         font-size: 18px;
-        a {
-            text-decoration: none;
+        text-decoration: none;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.397);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solidrgba(0, 0, 0, 0.2);
+        transition: all 0.5s;
+        &:hover {
+            background-color: transparent;
             color: #fff;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            border: 1px solidrgba(0, 0, 0, 0.2);
-            transition: all 0.5s;
-            &:hover {
-                background-color: transparent;
-                color: #fff;
-                background: #FF4C60;
-            }
+            background: #FF4C60;
         }
     }
 }
