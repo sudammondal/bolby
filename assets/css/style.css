@@ -91,6 +91,56 @@ p {
     max-width: 1058px;
   }
 }
+/* vedio popup */
+.mfp-iframe-holder {
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mfp-iframe-holder .mfp-close {
+  position: absolute;
+  top: -173px;
+  right: -150px;
+}
+
+button.mfp-close {
+  font-size: 58px;
+}
+button.mfp-close:hover {
+  color: #fff;
+}
+
+.mfp-iframe-scaler iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #000;
+}
+
+.mfp-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
 .manu_sidebar {
   height: 100vh;
   background: #353353;
@@ -680,6 +730,49 @@ p {
 .recent_worp .filter_item:hover .f_icon {
   opacity: 1;
   transform: translateY(0);
+}
+
+.imagelightbox-arrow-left:before {
+  content: "" !important;
+  border: 0px !important;
+  font-family: "FontAwesome";
+  font-size: 50px;
+}
+
+.imagelightbox-arrow-right::before {
+  content: "" !important;
+  border: 0px !important;
+  font-family: "FontAwesome";
+  font-size: 50px;
+}
+
+.imagelightbox-arrow {
+  background-color: transparent;
+  color: #ddd;
+  outline: none;
+  cursor: pointer;
+}
+.imagelightbox-arrow:focus, .imagelightbox-arrow:hover {
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+}
+
+.imagelightbox-close {
+  background-color: transparent;
+}
+.imagelightbox-close:after, .imagelightbox-close:before {
+  background-color: #ddd;
+}
+.imagelightbox-close:hover {
+  background-color: transparent;
+}
+.imagelightbox-close:hover:after, .imagelightbox-close:hover:before {
+  background-color: #fff;
+}
+
+.imagelightbox-overlay {
+  background-color: rgba(27, 27, 27, 0.81);
 }
 
 .priching_worp .priching {

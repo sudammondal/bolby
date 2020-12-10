@@ -127,3 +127,49 @@
         }
     }
 }
+
+.imagelightbox-arrow-left:before {
+    content: "\f0d9" !important;
+    border: 0px !important;
+    font-family: 'FontAwesome';
+    font-size: 50px;
+}
+
+.imagelightbox-arrow-right::before {
+    content: "\f0da" !important;
+    border: 0px !important;
+    font-family: 'FontAwesome';
+    font-size: 50px;
+}
+
+.imagelightbox-arrow {
+    background-color: transparent;
+    color: #ddd;
+    outline: none;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+    }
+}
+
+.imagelightbox-close {
+    background-color: transparent;
+    &:after,
+    &:before {
+        background-color: #ddd;
+    }
+    &:hover {
+        background-color: transparent;
+        &:after,
+        &:before {
+            background-color: #fff;
+        }
+    }
+}
+
+.imagelightbox-overlay {
+    background-color: rgb(27 27 27 / 81%);
+}
