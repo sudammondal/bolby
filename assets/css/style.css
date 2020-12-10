@@ -1002,18 +1002,14 @@ p {
     max-width: 920px;
   }
 
-  .banner_worp.main {
-    width: 100%;
-    margin-left: 0px;
-  }
-
   .manu_sidebar {
     width: 0;
     border: 0;
   }
 
-  .banner_worp.main .banner .scroll_down {
-    display: none;
+  .banner_worp.main {
+    width: 100%;
+    margin-left: 0px;
   }
 
   footer {
@@ -1024,10 +1020,18 @@ p {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 823px) {
+  .banner_worp.main .banner .scroll_down {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .banner_worp.main {
     width: 100%;
     margin-left: 0px;
+  }
+  .banner_worp.main .banner .scroll_down {
+    display: block;
   }
 
   .manu_sidebar {
@@ -1042,8 +1046,7 @@ p {
   .about_worp .about_cv .about_pra {
     font-size: 14px;
   }
-
-  .about_worp .about_cv .progress_bar {
+  .about_worp .progress_bar {
     margin-bottom: 10px;
   }
 
@@ -1079,6 +1082,10 @@ p {
     max-width: 540px;
   }
 
+  .banner_worp.main {
+    width: 100%;
+    margin-left: 0px;
+  }
   .banner_worp.main .banner .scroll_down {
     display: none;
   }
@@ -1087,7 +1094,7 @@ p {
     margin-bottom: 30px;
   }
 
-  .exprience_worp .acadmi_hed {
+  .exprience_worp .sarvice_item {
     margin-bottom: 30px;
   }
 
@@ -1104,15 +1111,13 @@ p {
   .cliente_worp {
     margin-top: 100px;
   }
-
-  .cliente_worp .slider_main .slider_item .slider_prag::before {
-    left: 49%;
-    top: -16px;
-  }
-
   .cliente_worp .slider_main .slider_item .slider_prag {
     position: relative;
     width: 460px;
+  }
+  .cliente_worp .slider_main .slider_item .slider_prag::before {
+    left: 49%;
+    top: -16px;
   }
 
   .latest_worp .thumbnail {
@@ -1124,7 +1129,6 @@ p {
     text-align: center;
     margin-left: 0;
   }
-
   .about_worp .about_cv::before {
     left: 48%;
     top: -16px;
@@ -1154,12 +1158,8 @@ p {
     margin-right: 10px;
   }
 
-  .banner_worp.main .banner .svg4 {
+  .banner_worp.main .svg4 {
     left: 377px;
-  }
-
-  .banner_worp.main .banner .svg5 {
-    left: 225px;
   }
 
   .recent_worp .filter_main .filter_manu {
@@ -1177,20 +1177,26 @@ p {
   .banner_worp.main .banner .svg9 {
     right: 100px;
   }
-}
-@media (max-width: 420px) {
+
   .banner_worp.main .banner .svg5 {
-    left: 25px;
-  }
-  .banner_worp.main .banner .svg2 {
-    right: 60px;
+    left: 174px;
   }
   .banner_worp.main .banner .svg4 {
-    left: 77px;
+    left: 300px;
   }
-
-  .banner_worp.main .banner .scroll_down {
+}
+@media (max-width: 420px) {
+  .banner_worp .banner .scroll_down {
     display: block;
+  }
+  .banner_worp .banner .svg5 {
+    left: 25px;
+  }
+  .banner_worp .banner .svg2 {
+    right: 60px;
+  }
+  .banner_worp .banner .svg4 {
+    left: 77px;
   }
 
   .about_worp .about_poto {
@@ -1198,7 +1204,6 @@ p {
     text-align: center;
     margin-left: 0;
   }
-
   .about_worp .about_cv::before {
     left: 48%;
     top: -16px;
@@ -1216,7 +1221,6 @@ p {
   .recent_worp .filter_main .filter_manu {
     display: block;
   }
-
   .recent_worp .filter_main .filter_manu .filter_list {
     text-align: center;
     margin: 0 0 10px 0;
