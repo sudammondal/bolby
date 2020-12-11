@@ -581,6 +581,8 @@ button.mfp-close:hover {
 }
 .exprience_worp .acadmi_hed .academi .acd_hed {
   color: #454360;
+  font-size: 20px;
+  font-weight: 700;
 }
 .exprience_worp .acadmi_hed .academi::after {
   content: "";
