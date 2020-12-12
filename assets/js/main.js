@@ -113,7 +113,8 @@ $(document).ready(function() {
     /*----------- vedio popup js ------------*/
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
-        type: 'iframe',
+        type: 'gelary',
+        /* gelary */
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
