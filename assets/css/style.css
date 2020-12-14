@@ -429,7 +429,7 @@ button.mfp-close:hover {
   top: 20%;
 }
 .about_worp .about_cv .progress_bar {
-  margin-bottom: 1px;
+  margin-bottom: 15px;
 }
 .about_worp .about_cv .progress_bar .progreg_mains {
   display: flex;
