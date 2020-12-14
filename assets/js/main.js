@@ -113,8 +113,7 @@ $(document).ready(function() {
     /*----------- vedio popup js ------------*/
     $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
         disableOn: 700,
-        type: 'gelary',
-        /* gelary */
+        type: 'iframe',
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
@@ -124,6 +123,19 @@ $(document).ready(function() {
     var soundName;
     var audioElement;
 
-    // MagnificPopup  
+    MagnificPopup
+    //======= pop up===== //
+    // function videoPopup() {
+    //     if ($('.popup-youtube').length) {
+    //         $('.popup-youtube').magnificPopup({
+    //             type: 'iframe',
+    //             gallery: {
+    //                 enabled: true
+    //             }
+    //         });
+    //     }
+    // }
+    // videoPopup();
+    // //======= pop up===== //
 
 });
