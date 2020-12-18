@@ -138,4 +138,20 @@ $(document).ready(function() {
     // videoPopup();
     // //======= pop up===== //
 
+    // if ($('.progress_bar').length > 0) {
+    //     var waypoint = new Waypoint({
+    //         element: document.getElementsByClassName('progress_bar'),
+    //         handler: function(direction) {
+
+    //             $('.progressbar').each(function() {
+    //                 var bar_value = $(this).attr('aria-valuenow') + '%';
+    //                 $(this).animate({ width: bar_value }, { easing: 'linear' });
+    //             });
+
+    //             this.destroy()
+    //         },
+    //         offset: '50%'
+    //     });
+    // }
+
 });
