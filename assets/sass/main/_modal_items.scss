@@ -22,15 +22,25 @@
         }
         .modal-dialog {
             background: white;
-            border-radius: 25px;
-            padding: 30px;
             text-align: left;
             max-width: 650px;
+            max-height: 319px;
             margin: 40px auto;
             position: relative;
             transform: translate(0) scale(0);
             .modal-content {
                 border: 0;
+                iframe {
+                    width: 650px;
+                    height: 319px;
+                }
+                img {
+                    width: 650px;
+                }
+            }
+            .modal_content {
+                border-radius: 25px;
+                padding: 30px;
             }
             .modal_img {
                 img {
@@ -46,6 +56,9 @@
             .modal_para2 {
                 margin-bottom: 12px;
             }
+        }
+        .modal_diloge {
+            border-radius: 25px;
         }
     }
 }

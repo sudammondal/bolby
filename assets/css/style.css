@@ -1387,16 +1387,26 @@ button.mfp-close:hover {
 }
 .mordal_worp .modal .modal-dialog {
   background: white;
-  border-radius: 25px;
-  padding: 30px;
   text-align: left;
   max-width: 650px;
+  max-height: 319px;
   margin: 40px auto;
   position: relative;
   transform: translate(0) scale(0);
 }
 .mordal_worp .modal .modal-dialog .modal-content {
   border: 0;
+}
+.mordal_worp .modal .modal-dialog .modal-content iframe {
+  width: 650px;
+  height: 319px;
+}
+.mordal_worp .modal .modal-dialog .modal-content img {
+  width: 650px;
+}
+.mordal_worp .modal .modal-dialog .modal_content {
+  border-radius: 25px;
+  padding: 30px;
 }
 .mordal_worp .modal .modal-dialog .modal_img img {
   border-radius: 10px;
@@ -1409,6 +1419,9 @@ button.mfp-close:hover {
 }
 .mordal_worp .modal .modal-dialog .modal_para2 {
   margin-bottom: 12px;
+}
+.mordal_worp .modal .modal_diloge {
+  border-radius: 25px;
 }
 
 .modal_fast {
