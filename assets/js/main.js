@@ -1,10 +1,8 @@
 $(document).ready(function() {
     // counting ja //
-    jQuery(document).ready(function($) {
-        $('.counting').counterUp({
-            delay: 10,
-            time: 1000
-        });
+    $('.counting').counterUp({
+        delay: 10,
+        time: 1000
     });
 
     // up icon js //
@@ -153,5 +151,68 @@ $(document).ready(function() {
     //         offset: '50%'
     //     });
     // }
+    // function progressbar() {
+    //     $(window).on('scroll', function() {
+    //         var windowHeight = $(window).height(),
+    //             scrollTop = $(this).scrollTop(),
+    //             aboutTop = $('#skill').offset().top,
+    //             aboutHeight = $('#skill').outerHeight();
+    //         // barfiler
+    //         if (scrollTop > (aboutTop + aboutHeight - windowHeight)) {
+    //             $('#bar1').barfiller({
+    //                 barColor: '#3a3a3a',
+    //                 duration: 2000
+    //             });
+    //             $('#bar2').barfiller({
+    //                 barColor: '#3a3a3a',
+    //                 duration: 2000
+    //             });
+    //             $('#bar3').barfiller({
+    //                 barColor: '#3a3a3a',
+    //                 duration: 2000
+    //             });
+    //             $('#bar4').barfiller({
+    //                 barColor: '#3a3a3a',
+    //                 duration: 2000
+    //             });
+
+
+    //         };
+    //     });
+
+
+    // }
+    // progressbar();
+    // window.onscroll = function() { myFunction() };
+
+    // function myFunction() {
+    //     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //     var scrolled = (winScroll / height) * 100;
+    //     document.getElementById("myBar").style.width = scrolled + "%";
+    // }
+
+
 
 });
+
+try {
+    jQuery('#bt-ourskill').appear(function() {
+        jQuery('.bt-skillholder,.jgguhh,.btskilto').each(function() {
+            jQuery(this).find('.bt-skillbar,.btskil,.btskilto').animate({
+                width: jQuery(this).attr('data-percent')
+            }, 2500);
+        });
+    });
+} catch (err) {}
+
+function counting_data() {
+    var counter = $(".counter");
+    if (counter.length) {
+        counter.counterUp({
+            delay: 10,
+            time: 1200
+        });
+    }
+}
+counting_data();

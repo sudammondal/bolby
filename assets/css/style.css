@@ -408,6 +408,7 @@ button.mfp-close:hover {
   border-radius: 20px;
   box-shadow: 0px 5px 20px 5px rgba(69, 67, 96, 0.1);
   margin-bottom: 65px;
+  /*==========skill progress bar==========*/
 }
 .about_worp .about_cv .about_pra {
   color: #5E5C7F;
@@ -417,62 +418,47 @@ button.mfp-close:hover {
   max-width: 600px;
   width: 100%;
 }
-.about_worp .about_cv::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 15px solid #FFF;
-  position: absolute;
-  left: 0;
-  top: 20%;
+.about_worp .about_cv .progress-element .skill-info {
+  display: block;
 }
-.about_worp .about_cv .progress_bar {
-  margin-bottom: 15px;
-}
-.about_worp .about_cv .progress_bar .progreg_mains {
-  display: flex;
-}
-.about_worp .about_cv .progress_bar .progreg_mains .prog_pra {
-  font-size: 16px;
-  color: #454360;
-  margin-bottom: 10px;
-}
-.about_worp .about_cv .progress_bar .progreg_mains .parse {
+.about_worp .about_cv .progress-element .skill-info .skill-val {
+  float: right;
   font-size: 14px;
-  margin-left: auto;
-  color: #5E5C7F;
+  line-height: 3;
+  font-family: "Rubik", sans-serif;
 }
-.about_worp .about_cv .progress_bar .progress {
+.about_worp .about_cv .progress-element .skill-info .skill-name {
+  display: inline-block;
+  color: #454360;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+.about_worp .about_cv .progress-element .bt-skill .bt-skillholder {
+  background: #e7ebf1;
+  display: block;
   height: 7px;
-  margin-bottom: 0;
-  overflow: hidden;
-  background-color: #F1F1F1;
+  width: 100%;
   border-radius: 15px;
-  box-shadow: none;
 }
-.about_worp .about_cv .progress_bar .progress .progressbar {
-  border-radius: 15px;
+.about_worp .about_cv .progress-element .bt-skill .bt-skillholder .bt-skillbar {
+  height: 7px;
   float: left;
-  width: 0;
-  height: 100%;
-  font-size: 12px;
-  line-height: 7px;
-  color: #fff;
-  text-align: center;
-}
-.about_worp .about_cv .progress_bar .progress .pro_color {
   background-color: #ffd15c;
-  width: 85%;
+  border-radius: 15px;
 }
-.about_worp .about_cv .progress_bar .progress .pro_color2 {
+.about_worp .about_cv .progress-element .bt-skill .bt-skillholder .btskil {
+  height: 7px;
+  float: left;
+  border-radius: 15px;
   background-color: #ff4c60;
-  width: 95%;
 }
-.about_worp .about_cv .progress_bar .progress .pro_color3 {
+.about_worp .about_cv .progress-element .bt-skill .bt-skillholder .btskilto {
+  height: 7px;
+  float: left;
+  border-radius: 15px;
   background-color: #6c6ce5;
-  width: 70%;
 }
 
 .counting_worp .counting_item {
@@ -1012,7 +998,7 @@ button.mfp-close:hover {
 }
 
 .contract_from .contrac_info {
-  background-image: url(../../../assets/imgs/map.svg);
+  background-image: url(../../assets/imgs/map.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1083,6 +1069,28 @@ button.mfp-close:hover {
   background-color: transparent;
   color: #fff;
   background: #FF4C60;
+}
+
+.ererer {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
 }
 
 /*==========================*/

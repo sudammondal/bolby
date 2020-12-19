@@ -33,61 +33,50 @@
             max-width: 600px;
             width: 100%;
         }
-        &::before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-right: 15px solid #FFF;
-            position: absolute;
-            left: 0;
-            top: 20%;
-        }
-        .progress_bar {
-            margin-bottom: 15px;
-            .progreg_mains {
-                display: flex;
-                .prog_pra {
-                    font-size: 16px;
-                    color: #454360;
-                    margin-bottom: 10px;
-                }
-                .parse {
+        /*==========skill progress bar==========*/
+        .progress-element {
+            .skill-info {
+                display: block;
+                .skill-val {
+                    float: right;
                     font-size: 14px;
-                    margin-left: auto;
-                    color: #5E5C7F;
+                    line-height: 3;
+                    font-family: "Rubik", sans-serif;
+                }
+                .skill-name {
+                    display: inline-block;
+                    color: #454360;
+                    margin: 0;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: "Rubik", sans-serif;
                 }
             }
-            .progress {
-                height: 7px;
-                margin-bottom: 0;
-                overflow: hidden;
-                background-color: #F1F1F1;
-                border-radius: 15px;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                .progressbar {
+            .bt-skill {
+                .bt-skillholder {
+                    background: #e7ebf1;
+                    display: block;
+                    height: 7px;
+                    width: 100%;
                     border-radius: 15px;
-                    float: left;
-                    width: 0;
-                    height: 100%;
-                    font-size: 12px;
-                    line-height: 7px;
-                    color: #fff;
-                    text-align: center;
-                }
-                .pro_color {
-                    background-color: rgb(255, 209, 92);
-                    width: 85%;
-                }
-                .pro_color2 {
-                    background-color: rgb(255, 76, 96);
-                    width: 95%;
-                }
-                .pro_color3 {
-                    background-color: rgb(108, 108, 229);
-                    width: 70%;
+                    .bt-skillbar {
+                        height: 7px;
+                        float: left;
+                        background-color: rgb(255, 209, 92);
+                        border-radius: 15px;
+                    }
+                    .btskil {
+                        height: 7px;
+                        float: left;
+                        border-radius: 15px;
+                        background-color: rgb(255, 76, 96);
+                    }
+                    .btskilto {
+                        height: 7px;
+                        float: left;
+                        border-radius: 15px;
+                        background-color: rgb(108, 108, 229);
+                    }
                 }
             }
         }
